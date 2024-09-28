@@ -19,7 +19,7 @@ def collatz_sequence(x):
 
 f = open("collatz_sequence.txt", 'w')
 
-for i in tqdm(range(1, x ** 10)):
+for i in tqdm(range(1, 10 ** x)):
     f.write(str(collatz_sequence(i)) + '\n')
 
 f.close()
